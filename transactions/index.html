@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transactions</title>
+
+    <script src="script.js"></script>
+    <script src="service/service.js"></script>
+    <script src="model/model.js"></script>
+    <script src="information/information.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="../lib/cookie.js"></script>
+</head>
+<body onload="loadTable();">
+<style>td,th{text-align: center;}</style>
+<div class="container">
+    <div class="row">
+        <table id="table" class="table table-hover table-responsive-lg">
+            <thead class="table-dark">
+            <tr>
+                <th>CustomerName</th>
+                <th>SellerName</th>
+                <th>Cost</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Successfully</th>
+                <th>TransactionID</th>
+                <th><a class="btn btn-warning" href="addToTable/addToTable.html">Add</a></th>
+            </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

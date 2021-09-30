@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit</title>
+
+    <script src="script.js"></script>
+    <script src="../service/service.js"></script>
+    <script src="../model/model.js"></script>
+    <script src="../information/information.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../../lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="../../lib/cookie.js"></script>
+</head>
+<body onload="load()">
+<div class="container">
+    <h1>update</h1><br>
+    <form id="form" class="was-validated">
+        <div class="form-group">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" class="form-control" placeholder="Enter customerName" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div><br>
+        <div class="form-group">
+            <label for="sellerName">Seller Name:</label>
+            <input type="text" id="sellerName" class="form-control" placeholder="Seller Name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div><br>
+        <div class="form-group">
+            <label for="cost">Cost:</label>
+            <input type="number" id="cost" class="form-control" placeholder="Cost" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field with number.</div>
+        </div><br>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" class="form-control" placeholder="Description" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div><br>
+        <div class="form-group">
+            <label for="transactionID">TransactionID:</label>
+            <input type="number" id="transactionID" class="form-control" placeholder="TransactionID" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field with number.</div>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+</div>
+
+</body>
+</html>
